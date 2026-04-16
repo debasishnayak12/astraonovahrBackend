@@ -12,6 +12,9 @@ const supabase = createClient(
   process.env.SUPABASE_KEY
 );
 
+app.get('/',async (req,res) => {
+    res.send('Everything okay🚀.');
+})
 
 // ✅ Save contact form
 app.post('/contact', async (req, res) => {
